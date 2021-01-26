@@ -29,9 +29,9 @@ function smileReady (){
   ball[0].style.top = "10%";
   ball[1].style.left = "50%";
   ball[1].style.top = "10%";
-  smile.play();
   console.log("进来了");
   document.removeEventListener('mousemove',rollEyes)
+  normal.load()
   smile.play();
   flag = true
   
@@ -40,6 +40,7 @@ function smileReady (){
     document.addEventListener('mousemove',rollEyes)
     mouth.classList.remove("smile");
     if(flag){
+      smile.load()
       normal.play()
       flag = false
     }
