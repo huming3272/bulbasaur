@@ -31,7 +31,6 @@ function smileReady (){
   ball[1].style.top = "10%";
   console.log("进来了");
   document.removeEventListener('mousemove',rollEyes)
-  loaded.load()
   normal.load()
   smile.play();
   flag = true
