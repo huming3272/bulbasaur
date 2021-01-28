@@ -30,6 +30,7 @@ let interaction = {
   },
   normal: () => {
     document.addEventListener("mousemove", interaction.rollEyes);
+    // interaction.ui.mouth.classList.remove("smile");
     interaction.ui.mouth.classList.remove("active");
     interaction.ui.ball[0].classList.remove("active");
     interaction.ui.ball[1].classList.remove("active");
@@ -72,6 +73,7 @@ const player = {
     "#btnEnd": "end",
   },
   n: 1,
+  flag: false,
   init: () => {
     player.ui.text.innerText = string.substr(0, player.n);
     player.ui.style.innerHTML = string.substr(0, player.n);

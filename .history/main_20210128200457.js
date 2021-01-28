@@ -22,6 +22,11 @@ let interaction = {
     interaction.ui.mouth.classList.add("active");
     interaction.ui.ball[0].classList.add("active");
     interaction.ui.ball[1].classList.add("active");
+    // interaction.ui.ball[0].style.left = "-9%";
+    // interaction.ui.ball[0].style.top = "10%";
+    // interaction.ui.ball[1].style.left = "50%";
+    // interaction.ui.ball[1].style.top = "10%";
+    // console.log("进来了");
     document.removeEventListener("mousemove", interaction.rollEyes);
     interaction.audio.loaded.load();
     interaction.audio.normal.load();
@@ -30,6 +35,7 @@ let interaction = {
   },
   normal: () => {
     document.addEventListener("mousemove", interaction.rollEyes);
+    // interaction.ui.mouth.classList.remove("smile");
     interaction.ui.mouth.classList.remove("active");
     interaction.ui.ball[0].classList.remove("active");
     interaction.ui.ball[1].classList.remove("active");
@@ -72,6 +78,7 @@ const player = {
     "#btnEnd": "end",
   },
   n: 1,
+  flag: false,
   init: () => {
     player.ui.text.innerText = string.substr(0, player.n);
     player.ui.style.innerHTML = string.substr(0, player.n);

@@ -72,6 +72,7 @@ const player = {
     "#btnEnd": "end",
   },
   n: 1,
+  flag: false,
   init: () => {
     player.ui.text.innerText = string.substr(0, player.n);
     player.ui.style.innerHTML = string.substr(0, player.n);

@@ -147,12 +147,12 @@ const string = `
     top: 10%;
   }
   .eyeLeft > div.active{
-	 left: -9% !important;
-	 top: 10% !important; 
+	 left: -9%;
+	 top: 10%; 
 }	
   .eyeRight > div.active{
-	left: 50% !important; 
-	top: 10% !important;
+	left: "50%"
+	top: "10%"
   }
 
   .pupil{

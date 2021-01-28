@@ -147,12 +147,10 @@ const string = `
     top: 10%;
   }
   .eyeLeft > div.active{
-	 left: -9% !important;
-	 top: 10% !important; 
+	  
 }	
   .eyeRight > div.active{
-	left: 50% !important; 
-	top: 10% !important;
+	  
   }
 
   .pupil{
@@ -235,7 +233,7 @@ const string = `
     opacity:0;
     transition: all 0.5s;
 }
-#bulbasaur >.mouth>div.active{
+#bulbasaur >.mouth> .smile{
     top: -160px !important;
     opacity: 1 !important;
 }

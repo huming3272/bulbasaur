@@ -151,8 +151,8 @@ const string = `
 	 top: 10% !important; 
 }	
   .eyeRight > div.active{
-	left: 50% !important; 
-	top: 10% !important;
+	left: "50% !important; 
+	top: "10%" !important;
   }
 
   .pupil{
