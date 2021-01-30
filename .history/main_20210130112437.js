@@ -42,7 +42,7 @@ let interaction = {
       interaction.audio.normal.play();
       interaction.flag = false;
     }
-    // console.log("离开了");
+    console.log("离开了");
   },
   rollEyes: (event) => {
     // let centerX = window.innerWidth / 2;

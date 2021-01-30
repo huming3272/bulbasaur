@@ -20,7 +20,7 @@ let interaction = {
   },
   cancelEvent:()=>{
     interaction.ui.wrapper.removeEventListener("mouseenter", interaction.smile);
-    interaction.ui.wrapper.removeEventListener("mouseleave",interaction.normal);
+    interaction.ui.wrapper.addEventListener("mouseleave",interaction.normal);
   },
   smile: () => {
     interaction.ui.mouth.classList.add("active");
@@ -42,7 +42,7 @@ let interaction = {
       interaction.audio.normal.play();
       interaction.flag = false;
     }
-    // console.log("离开了");
+    console.log("离开了");
   },
   rollEyes: (event) => {
     // let centerX = window.innerWidth / 2;
@@ -102,7 +102,6 @@ const player = {
     player.ui.text.scrollTop = player.ui.text.scrollHeight;
   },
   play: () => {
-    interaction.cancelEvent()
     window.clearInterval(player.id);
     player.id = setInterval(player.run, player.time);
   },
@@ -127,7 +126,6 @@ const player = {
   end: () => {
     if (confirm("太长了不想看？")) {
       player.pause();
-
       player.ui.text.innerText = string;
       player.ui.style.innerHTML = string;
       interaction.init();

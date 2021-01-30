@@ -42,7 +42,7 @@ let interaction = {
       interaction.audio.normal.play();
       interaction.flag = false;
     }
-    // console.log("离开了");
+    console.log("离开了");
   },
   rollEyes: (event) => {
     // let centerX = window.innerWidth / 2;
@@ -102,7 +102,6 @@ const player = {
     player.ui.text.scrollTop = player.ui.text.scrollHeight;
   },
   play: () => {
-    interaction.cancelEvent()
     window.clearInterval(player.id);
     player.id = setInterval(player.run, player.time);
   },
